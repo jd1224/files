@@ -1,0 +1,4 @@
+category,activity,confidence,last_updated,name,intention,first_seen,metadata,tor,rdns_parent,link,org,os,asn,rdns
+activity,,low,2018-07-30T04:49:37Z,SMB_SCANNER_LOW,,2018-07-30T04:49:37Z,"{u'datacenter': u'', u'tor': False, u'rdns_parent': u'', u'link': u'', u'org': u'PT TELKOM INDONESIA', u'os': u'', u'asn': u'AS7713', u'rdns': u''}",,,,,,,
+worm,,high,2019-06-27T05:19:48Z,ETERNALBLUE,malicious,2019-06-24T05:50:13Z,"{u'datacenter': u'', u'tor': False, u'rdns_parent': u'', u'link': u'Ethernet or modem', u'org': u'PT TELKOM INDONESIA', u'os': u'Windows 7/8', u'asn': u'AS17974', u'rdns': u''}",,,,,,,
+activity,,low,2019-06-18T04:29:18Z,SMB_SCANNER_LOW,,2019-05-20T08:16:00Z,"{u'datacenter': u'', u'tor': False, u'rdns_parent': u'', u'link': u'Ethernet or modem', u'org': u'PT TELKOM INDONESIA', u'os': u'Windows 7/8', u'asn': u'AS17974', u'rdns': u''}",,,,,,,
