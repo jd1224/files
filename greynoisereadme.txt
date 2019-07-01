@@ -1,4 +1,4 @@
-script takes an input file in csv format from the same folder as the program
+added script takes an input file in csv format from the same folder as the program
 which is named input.csv. file must be comma seperated with no spaces to 
 work correctly with the script.  script writes data pulled from the 
 greynoise api's ip search to a file in the same folder named output.csv.
