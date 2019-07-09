@@ -9,15 +9,19 @@ with f:
  writer.writeheader()
  with open('output.csv') as output:
   with open('input.csv') as csvfile:
-   filereader = csv.reader(csvfile)
+   filereader = csv.reader(csvfile, delimiter = '\n')
    for row in filereader:
     for item in row: #item is record
-     print item
+     print (item)
      data = {
      'ip': item
      }
      response = requests.post('http://api.greynoise.io:8888/v1/query/ip', data=data)
-     serials =  response.json()
+     try:
+      serials =  response.json()
+     except Exception as e:
+       print (e)
+       print (response)
      try:
       y=0
       for x in range(0,499):
