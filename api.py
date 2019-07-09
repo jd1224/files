@@ -34,15 +34,34 @@ with open('input.csv') as csvfile:
                 print(item+' NO FIELD')
         '''
         
-        printer = 'Message: '+serials['verbose_msg']+' '+'ip'+'\n'
+        printer = 'Message: '+serials['verbose_msg']+' '+ip+'\n'
         
         try:
-            printer += 'Network: '+serials['network']+'\n'+\
-                ''''Continent: '+serials['continent']+'\n'\
-                +'Country: '+str(serials['country'])+'\n'+'*******************WHOIS LOOKUP***********************\n'+serials['whois']+\
-                '\n*******************WHOIS END***********************************\n'\
-                +'ASN: '+str(serials['asn'])+'\n'\
-                +'Owner: '+serials['as_owner']+'\n'+'undetected_urls: '''
+            printer += 'Network: '+serials['network']+'\n'   
+        except:
+            pass
+        try:
+            printer += 'Continent: '+serials['continent']+'\n'
+               
+        except:
+            pass
+        try:
+            printer += 'Country: '+str(serials['country'])+'\n'
+            
+        except:
+            pass
+        try:
+            printer += '*******************WHOIS LOOKUP***********************\n'+serials['whois']+\
+                '\n*******************WHOIS END***********************************\n'
+        except:
+            pass
+        try:
+            printer += 'ASN: '+str(serials['asn'])+'\n'
+                
+        except:
+            pass
+        try:
+            printer += 'Owner: '+serials['as_owner']+'\n'+'undetected_urls: '
         except:
             pass
                 
