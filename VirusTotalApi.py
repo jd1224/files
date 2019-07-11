@@ -20,7 +20,7 @@ with open('input.csv') as csvfile:
             
         os.chdir(ip)
         url = 'https://www.virustotal.com/vtapi/v2/ip-address/report'
-        params = {'apikey':'2fb1db9bbb2b4b5b400e54e7375415192664475038c5bd8c9dfcd7693d277339','ip':ip}
+        params = {'apikey':'INSERT API FROM VIRUSTOTAL HERE','ip':ip}
         response = requests.get(url, params=params)
         serials = response.json()
         fields = ['undetected_downloaded_samples','detected_downloaded_samples',\
